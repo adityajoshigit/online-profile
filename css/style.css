@@ -51,3 +51,16 @@ li.nav-item:hover {
   border-radius: 20%;
   border: 1px solid lightgray;
 }
+
+.section-header-span {
+  letter-spacing: 2px;
+  border-bottom: 2px solid white;
+}
+
+.tech-description {
+  font-size: 0.9rem;
+}
+
+.tech-item {
+  font-size: 0.7rem;
+}
