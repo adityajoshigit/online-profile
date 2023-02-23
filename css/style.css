@@ -76,6 +76,7 @@ li.nav-item:hover {
 .tech-description {
   font-size: 0.9rem;
   word-spacing: 0.2rem;
+  letter-spacing: 0.5px;
 }
 
 .tech-item {
@@ -84,9 +85,23 @@ li.nav-item:hover {
 
 .msg-text-style {
   line-height: 1.7rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 2px;
 }
 
+.linkedin-btn:hover {
+  background-color: #0077B5;
+  color: white;
+}
+
+.github-btn:hover {
+  background-color: #000;
+  color: white;
+}
+
+.email-btn:hover {
+  background-color: #DB4437;
+  color: white;
+}
 .separator-line {
   border-right: 1px lightgrey solid;
 }
