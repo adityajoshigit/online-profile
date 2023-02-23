@@ -17,6 +17,8 @@ createApp({
     lastName: "Joshi",
     phoneNumber: "+1(438)866-8552",
     email: "adityajoshi.sfdc@gmail.com",
+    profileHeadline:
+      "I am a passionate Software Developer, inclined towards learning and implementing new techniologies. I love web development and I'm a Salesforce Enthusiast. Client service has been my motivation throughout my journey as a developer. Looking forward to hearing from you!",
   },
   socialMediaInfo: {
     github: "https://github.com/adityajoshigit",
@@ -188,7 +190,7 @@ createApp({
       ],
       description:
         "Have worked on Java using its latest features such as Streams, Lambda functions etc and Akka library for Actor-based programming. Recently, I have started learning Node.js and Express.js to write API services in JavaScript. I have also used Python in one of my academic projects.",
-      experienceYears: 2,
+      experienceYears: 1,
       experienceLevel: "Beginner",
     },
   ],

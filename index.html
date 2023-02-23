@@ -80,7 +80,7 @@
               Welcome To My Portfolio!
             </p>
             <p class="headline text-secondary">
-              I am a passionate Software Developer, inclined towards learning and implementing new techniologies. I love web development and I'm a Salesforce Enthusiast. Client service has been my motivation throughout my journey as a developer. Looking forward to hearing from you! 
+              {{personalInfo.profileHeadline}}
             </p>
             <div class="connection-btn-group w-md-75 row">
               <div class="py-1 col-sm-12 col-md-4 col-lg-3">
@@ -128,7 +128,7 @@
           </span>
         </h2>
         <div class="row">
-          <div class="col-12 col-md-4 skill-col py-2">
+          <!-- <div class="col-12 col-md-4 skill-col py-2">
             <div class="card text-center skill-card shadow">
               <div class="card-header">
                 <h4 class="card-title m-0">
@@ -218,8 +218,34 @@
                 </span>
               </div>
             </div>
-          </div>
+          </div> -->
 
+          <div v-for="skill in skillSet" class="col-12 col-md-4 skill-col py-2">
+            <div class="card text-center skill-card shadow">
+              <div class="card-header">
+                <h4 class="card-title m-0">
+                  {{skill.domain}}
+                </h4>
+              </div>
+              <div class="card-body">
+                <div class="card-text">
+                  <div class="div-stack">
+                    <span v-for="item in skill.skillItems" class="tech-item badge rounded-pill bg-secondary ms-1">{{item.label}}</span>
+                  </div>
+                  <div class="tech-description mt-3">
+                    {{skill.description}}
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <span 
+                  v-text="skill.experienceYears + (skill.experienceYears>1?' years':' year')" 
+                  class="experience text-secondary"
+                >
+                </span>
+              </div>
+            </div>
+          </div>
           
         </div>
       </div>
