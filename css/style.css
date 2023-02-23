@@ -54,7 +54,15 @@ li.nav-item:hover {
 
 .section-header-span {
   letter-spacing: 2px;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid;
+}
+
+.border-color-white {
+  border-color: white;
+}
+
+.border-color-primary {
+  border-color: rgba(var(--bs-primary-rgb),var(--bs-bg-opacity))!important;
 }
 
 .tech-description {
@@ -63,4 +71,23 @@ li.nav-item:hover {
 
 .tech-item {
   font-size: 0.7rem;
+}
+
+.msg-text-style {
+  line-height: 1.7rem;
+  letter-spacing: 0.1rem;
+}
+
+.separator-line {
+  border-right: 1px lightgrey solid;
+}
+
+.contact-input {
+  margin-bottom: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .separator-line {
+    border-right: 0px;
+  }
 }
