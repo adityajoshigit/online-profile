@@ -128,99 +128,10 @@
           </span>
         </h2>
         <div class="row">
-          <!-- <div class="col-12 col-md-4 skill-col py-2">
-            <div class="card text-center skill-card shadow">
-              <div class="card-header">
-                <h4 class="card-title m-0">
-                  Salesforce CRM
-                </h4>
-              </div>
-              <div class="card-body">
-                <div class="card-text">
-                  <div class="div-stack">
-                    <span class="tech-item badge rounded-pill bg-secondary">Apex</span>
-                    <span class="tech-item badge rounded-pill bg-secondary">Lightning Aura</span>
-                    <span class="tech-item badge rounded-pill bg-secondary">LWC</span>
-                    <span class="tech-item badge rounded-pill bg-secondary">Community</span>
-                    <span class="tech-item badge rounded-pill bg-secondary">Users &amp; Profiles</span>
-                    <span class="tech-item badge rounded-pill bg-secondary">Deployment</span>
-                    <span class="tech-item badge rounded-pill bg-secondary">Testing</span>
-                  </div>
-                  <div class="tech-description mt-3">
-                    I worked on Salesforce ecosystem as a developer and consultant. The projects I worked on involved a range of features including Customization, Configuration, Website building, Third-party System Integration using REST, Automatic Email Notification etc.
-                  </div>
-                </div>
-              </div>
-              <div class="card-footer">
-                <span class="experience text-secondary">
-                  3 years
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-4 skill-col py-2">
-            <div class="card text-center skill-card shadow">
-              <div class="card-header">
-                <h4 class="card-title m-0">
-                  Frontend Development
-                </h4>
-              </div>
-              <div class="card-body">
-                <div class="card-text">
-                  <div class="div-stack">
-                    <span class="tech-item badge rounded-pill bg-secondary">HTML5</span>
-                    <span class="tech-item badge rounded-pill bg-secondary">CSS3</span>
-                    <span class="tech-item badge rounded-pill bg-secondary">JavaScript</span>
-                    <span class="tech-item badge rounded-pill bg-secondary">Bootstrap5</span>
-                    <span class="tech-item badge rounded-pill bg-secondary">ReactJS</span>
-                    <span class="tech-item badge rounded-pill bg-secondary">Vue.js</span>
-                    <span class="tech-item badge rounded-pill bg-secondary">Node.js</span>
-                  </div>
-                  <div class="tech-description mt-3">
-                    As a Frontend Web Development, I work on technologies and frameworks such as HTML5, CSS3, JavaScript, Bootstrap 5, ES6+, ReactJS, Vue.js, node.js and many more. I've always been keen to learn new frameworks and technologies.  
-                  </div>
-                </div>
-              </div>
-              <div class="card-footer">
-                <span class="experience text-secondary">
-                  2 years
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-4 skill-col py-2">
-            <div class="card text-center skill-card shadow">
-              <div class="card-header">
-                <h4 class="card-title m-0">
-                  Backend Development
-                </h4>
-              </div>
-              <div class="card-body">
-                <div class="card-text">
-                  <div class="div-stack">
-                    <span class="tech-item badge rounded-pill bg-secondary">Java 8+</span>
-                    <span class="tech-item badge rounded-pill bg-secondary">Python</span>
-                    <span class="tech-item badge rounded-pill bg-secondary">Play Framework</span>
-                    <span class="tech-item badge rounded-pill bg-secondary">Akka Library</span>
-                    <span class="tech-item badge rounded-pill bg-secondary">Node.js</span>
-                    <span class="tech-item badge rounded-pill bg-secondary">Express.js</span>
-                  </div>
-                  <div class="tech-description mt-3">
-                    Have worked on Java using its latest features such as Streams, Lambda functions etc and Akka library for Actor-based programming. Recently, I have started learning Node.js and Express.js to write API services in JavaScript. I have also used Python in one of my academic projects.
-                  </div>
-                </div>
-              </div>
-              <div class="card-footer">
-                <span class="experience text-secondary">
-                  1 year
-                </span>
-              </div>
-            </div>
-          </div> -->
-
-          <div v-for="skill in skillSet" class="col-12 col-md-4 skill-col py-2">
+          <div 
+            v-for="skill in skillSet" 
+            class="col-12 col-md-4 skill-col py-2"
+          >
             <div class="card text-center skill-card shadow">
               <div class="card-header">
                 <h4 class="card-title m-0">
@@ -230,7 +141,12 @@
               <div class="card-body">
                 <div class="card-text">
                   <div class="div-stack">
-                    <span v-for="item in skill.skillItems" class="tech-item badge rounded-pill bg-secondary ms-1">{{item.label}}</span>
+                    <span 
+                      v-for="item in skill.skillItems" 
+                      class="tech-item badge rounded-pill bg-secondary ms-1"
+                    >
+                      {{item.label}}
+                    </span>
                   </div>
                   <div class="tech-description mt-3">
                     {{skill.description}}
