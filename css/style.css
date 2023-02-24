@@ -110,6 +110,13 @@ li.nav-item:hover {
   margin-bottom: 0.75rem;
 }
 
+.project-image {
+  max-height: 3rem;
+}
+
+.grow { transition: all .5s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
 @media (max-width: 768px) {
   .separator-line {
     border-right: 0px;
