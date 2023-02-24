@@ -1,12 +1,52 @@
+// import { sendEmail } from "../js/emailUtil";
 import { createApp } from "https://unpkg.com/petite-vue?module";
 
 createApp({
+  leadEmailId: "",
+  leadNameValue: "",
+  leadMessageToMe: "",
   navbarBrandHeader: "Aditya Joshi",
+  SERVICE_ID: "service_iu6lm5r",
+  TEMPLATE_ID: "template_91lq7uj",
+  PUBLIC_KEY: "eSiKRxI75N8U__SNG",
+  sendEmail: function () {
+    emailjs
+      .send(
+        "service_iu6lm5r",
+        "template_91lq7uj",
+        {
+          from_name: this.leadNameValue,
+          reply_to: this.leadEmailId,
+          message: this.leadMessageToMe,
+        },
+        "eSiKRxI75N8U__SNG"
+      )
+      .then()
+      .catch()
+      .finally(() => {
+        this.leadEmailId = "";
+        this.leadNameValue = "";
+        this.leadMessageToMe = "";
+      });
+  },
+  onContactMeClick: function () {
+    console.log(this.leadNameValue);
+    console.log(this.leadEmailId);
+    console.log(this.leadMessageToMe);
+    this.sendEmail();
+  },
   get fullName() {
     return (
       this.personalInfo.firstName +
       " " +
       this.personalInfo.lastName
+    );
+  },
+  get isValidForm() {
+    return (
+      this.leadNameValue &&
+      this.leadEmailId &&
+      this.leadMessageToMe
     );
   },
   get emailLink() {
