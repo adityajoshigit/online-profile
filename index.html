@@ -166,6 +166,47 @@
         </div>
       </div>
     </section>
+    <section class="projects-section" id="projects">
+      <div class="container">
+        <h2 class="text-primary p-3 text-center">
+          <span class=" section-header-span border-color-primary">
+            Projects
+          </span>
+        </h2>
+        <div class="row g-2">
+          <div
+            v-for="project in projectsInfo.projects"
+            class="col-12 col-md-4 px-2"
+          >
+            <div class="card shadow-lg grow">
+              <div class="card-header text-center project-card-header">
+                <img src="./default-img-project.png" class="img-fluid h-25 project-image" />
+              </div>
+              <div class="card-body">
+                <h4 class="card-title text-center">
+                  {{project.title}}
+                </h4>
+                <div class="text-center tech-stack-used">
+                  <span v-for="tech in project.technologies" class="badge badge-dark bg-secondary text-white ms-2">
+                    {{tech}}
+                  </span>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="left-side">
+                    Stars: {{project.numberOfStars}}
+                  </div>
+                  <div class="right-side">
+                    <a v-bind:href="project.repoURL" target="_blank">View Source</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section id="contact-me" class="contact-em-section">
       <div class="container py-4">
         <h2 class="text-primary p-3 text-center">
