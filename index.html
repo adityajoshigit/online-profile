@@ -176,29 +176,40 @@
         <div class="row g-2">
           <div
             v-for="project in projectsInfo.projects"
-            class="col-12 col-md-4 px-2"
+            class="col-12 col-sm-6 col-lg-4 px-3 py-2"
           >
-            <div class="card shadow-lg grow">
+            <div class="card shadow-sm grow">
               <div class="card-header text-center project-card-header">
-                <img src="./img/default-img-project.png" class="img-fluid h-25 project-image" />
+                <img v-bind:src="project.showcaseImageURL || './img/default-img-project.png'" class="img-fluid w-100 rounded-top-1 project-image" />
               </div>
               <div class="card-body">
                 <h4 class="card-title text-center">
                   {{project.title}}
                 </h4>
                 <div class="text-center tech-stack-used">
-                  <span v-for="tech in project.technologies" class="badge badge-dark bg-secondary text-white ms-2">
-                    {{tech}}
+                  <span v-for="tech in project.technologies" class="badge badge-dark bg-secondary text-white ms-1 tech-stack-item">
+                    <small>
+                      {{tech}}
+                    </small> 
                   </span>
+                </div>
+                <div class="text-center project-description text-secondary pt-2">
+                  <h6>
+                    <small>
+                      {{project.description}}
+                    </small>
+                  </h6> 
                 </div>
               </div>
               <div class="card-footer">
-                <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center justify-content-between project-footer">
                   <div class="left-side">
-                    Stars: {{project.numberOfStars}}
+                    &#11088; {{project.numberOfStars}}
                   </div>
                   <div class="right-side">
-                    <a v-bind:href="project.repoURL" target="_blank">View Source</a>
+                    <a v-bind:href="project.repoURL" target="_blank" class="source-link">
+                      View Source
+                    </a>
                   </div>
                 </div>
               </div>

@@ -237,38 +237,45 @@ createApp({
   projectsInfo: {
     projects: [
       {
-        title: 'Online Portfolio Website',
+        title: "Online Portfolio Website",
         technologies: [
-          'HTML5', 'CSS3', 'Vue.js', 'Bootstrap 5'
+          "HTML5",
+          "CSS3",
+          "Vue.js",
+          "Bootstrap 5",
         ],
-        repoURL: 'https://github.com/adityajoshigit/online-profile',
-        showcaseImageURL: '',
-        projectURL: 'https://adityaj-profile.netlify.app/',
+        repoURL:
+          "https://github.com/adityajoshigit/online-profile",
+        showcaseImageURL: "./img/pro-ss.PNG",
+        projectURL: "https://adityaj-profile.netlify.app/",
         numberOfStars: 1,
-        description: 'Own Online Portfolio showcasing my profile details.'
+        description:
+          "Own Online Portfolio showcasing my profile details.",
       },
       {
-        title: 'Feedback App',
-        technologies: [
-          'ReactJS', 'CSS3', 
-        ],
-        repoURL: 'https://github.com/adityajoshigit/feedback-app',
-        showcaseImageURL: '',
-        projectURL: 'https://main--feedback-app-web-app.netlify.app/',
+        title: "Feedback App",
+        technologies: ["ReactJS", "CSS3"],
+        repoURL:
+          "https://github.com/adityajoshigit/feedback-app",
+        showcaseImageURL: "./img/fa-ss.PNG",
+        projectURL:
+          "https://main--feedback-app-web-app.netlify.app/",
         numberOfStars: 1,
-        description: 'Web app allowing users to give feedback in form of a rating and related text description. '
+        description:
+          "Web app allowing users to give feedback in form of a rating and related text description. ",
       },
       {
-        title: 'Task Tracker App',
-        technologies: [
-         'ReactJS', 'CSS3', 'Bootstrap 5'
-        ],
-        repoURL: 'https://github.com/adityajoshigit/task-tracker',
-        showcaseImageURL: '',
-        projectURL: 'https://daily-task-tracker.vercel.app/',
+        title: "Task Tracker App",
+        technologies: ["ReactJS", "CSS3", "Bootstrap 5"],
+        repoURL:
+          "https://github.com/adityajoshigit/task-tracker",
+        showcaseImageURL: "./img/tt-ss.PNG",
+        projectURL:
+          "https://daily-task-tracker.vercel.app/",
         numberOfStars: 1,
-        description: 'A tiny web app that helps us track our daily tasks list by acting as a rough checklist. Also lets us set reminders for tasks at specific times.'
-      }
-    ]
-  }
+        description:
+          "A tiny web app that helps us track our daily tasks list by acting as a rough checklist. Also lets us set reminders for tasks at specific times.",
+      },
+    ],
+  },
 }).mount("#pageBody");
