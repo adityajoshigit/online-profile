@@ -256,10 +256,10 @@ createApp({
         title: "Feedback App",
         technologies: ["ReactJS", "CSS3"],
         repoURL:
-          "https://github.com/adityajoshigit/feedback-app",
+          "https://github.com/adityajoshigit/feedback-app-react",
         showcaseImageURL: "./img/fa-ss.PNG",
         projectURL:
-          "https://main--feedback-app-web-app.netlify.app/",
+          "https://feedback-app-web-app.netlify.app/",
         numberOfStars: 1,
         description:
           "Web app allowing users to give feedback in form of a rating and related text description. ",

@@ -207,8 +207,12 @@
                     &#11088; {{project.numberOfStars}}
                   </div>
                   <div class="right-side">
-                    <a v-bind:href="project.repoURL" target="_blank" class="source-link">
-                      View Source
+                    <a v-bind:href="project.repoURL" target="_blank" class="source-link btn btn-sm p-0">
+                      <i class="bi bi-git"></i>
+                    </a>
+                    |
+                    <a v-bind:href="project.projectURL" class="demo-link">
+                      Demo
                     </a>
                   </div>
                 </div>
