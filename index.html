@@ -19,8 +19,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
   </head>
 
-  <body data-bs-spy="scroll" data-bs-target="#pageNavBar" id="pageBody">
-
+  <body 
+    data-bs-spy="scroll" 
+    data-bs-target="#pageNavBar" 
+    id="pageBody"
+    v-bind:class="isLoading?'overflow-y-hidden':''"
+  >
+    <div v-if="isLoading" class="d-flex justify-content-center align-items-center text-center overlay-element">
+      <div class="spinner-border text-black" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
     <!-- sticky-top -->
     <nav id="pageNavBar" class="navbar navbar-light bg-light navbar-expand-lg shadow-sm sticky-top">
       <div class="container">

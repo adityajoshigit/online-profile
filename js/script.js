@@ -2,6 +2,7 @@
 import { createApp } from "https://unpkg.com/petite-vue?module";
 
 createApp({
+  isLoading: false,
   leadEmailId: "",
   leadNameValue: "",
   leadMessageToMe: "",
@@ -10,6 +11,7 @@ createApp({
   TEMPLATE_ID: "template_91lq7uj",
   PUBLIC_KEY: "eSiKRxI75N8U__SNG",
   sendEmail: function () {
+    this.isLoading = true;
     emailjs
       .send(
         "service_iu6lm5r",
@@ -24,6 +26,7 @@ createApp({
       .then()
       .catch()
       .finally(() => {
+        this.isLoading = false;
         this.leadEmailId = "";
         this.leadNameValue = "";
         this.leadMessageToMe = "";
