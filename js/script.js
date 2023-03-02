@@ -281,4 +281,45 @@ createApp({
       },
     ],
   },
+  workExpInfo: {
+    totalYears: 3,
+    expList: [
+      {
+        id: 0,
+        employer: "Eternus Solutions Private Limited",
+        designation: "Sr. System Executive",
+        role: "Sr. Salesforce Developer",
+        description:
+          "While working as a senior resource on a service-based Salesforce development project I got an opportunity to work closely with the direct client by participating in daily status meetings and requirement gathering discussions. I got to design a public API for one of the requirements which was created and maintained by me. Overall, I worked on technologies like Salesforce.com, HTML, CSS, JS, LWC, Lightning Aura Components, Apex, Payment Gateway Integration (REST APIs), etc.",
+        fromYear: 2020,
+        fromMonth: 8,
+        toYear: 2021,
+        toMonth: 8,
+      },
+      {
+        id: 1,
+        employer: "Eternus Solutions Private Limited",
+        designation: "System Executive",
+        role: "Salesforce Developer",
+        description:
+          "While working as a senior resource on a service-based Salesforce development project I got an opportunity to work closely with the direct client by participating in daily status meetings and requirement gathering discussions. I got to design a public API for one of the requirements which was created and maintained by me. Overall, I worked on technologies like Salesforce.com, HTML, CSS, JS, LWC, Lightning Aura Components, Apex, Payment Gateway Integration (REST APIs), etc.",
+        fromYear: 2018,
+        fromMonth: 9,
+        toYear: 2020,
+        toMonth: 7,
+      },
+      {
+        id: 2,
+        employer: "Eternus Solutions Private Limited",
+        designation: "Trainee",
+        role: "Trainee",
+        description:
+          "While working as a senior resource on a service-based Salesforce development project I got an opportunity to work closely with the direct client by participating in daily status meetings and requirement gathering discussions. I got to design a public API for one of the requirements which was created and maintained by me. Overall, I worked on technologies like Salesforce.com, HTML, CSS, JS, LWC, Lightning Aura Components, Apex, Payment Gateway Integration (REST APIs), etc.",
+        fromYear: 2018,
+        fromMonth: 9,
+        toYear: 2018,
+        toMonth: 6,
+      },
+    ],
+  },
 }).mount("#pageBody");

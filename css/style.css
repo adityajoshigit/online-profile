@@ -150,6 +150,11 @@ li.nav-item:hover {
   overflow-y: hidden;
 }
 
+.exp-separator {
+  height: 2rem;
+  /* background-color: #0077b5; */
+}
+
 @media (max-width: 768px) {
   .separator-line {
     border-right: 0px;
