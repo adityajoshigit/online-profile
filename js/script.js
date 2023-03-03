@@ -10,6 +10,20 @@ createApp({
   SERVICE_ID: "service_iu6lm5r",
   TEMPLATE_ID: "template_91lq7uj",
   PUBLIC_KEY: "eSiKRxI75N8U__SNG",
+  monthInWords: {
+    1: "Jan",
+    2: "Feb",
+    3: "Mar",
+    4: "Apr",
+    5: "May",
+    6: "June",
+    7: "July",
+    8: "Aug",
+    9: "Sept",
+    10: "Oct",
+    11: "Nov",
+    12: "Dec",
+  },
   sendEmail: function () {
     this.isLoading = true;
     emailjs
@@ -278,6 +292,50 @@ createApp({
         numberOfStars: 1,
         description:
           "A tiny web app that helps us track our daily tasks list by acting as a rough checklist. Also lets us set reminders for tasks at specific times.",
+      },
+    ],
+  },
+  workExpInfo: {
+    totalYears: 3,
+    expList: [
+      {
+        id: 0,
+        employer: "Eternus Solutions Private Limited",
+        website: "https://www.eternussolutions.com",
+        designation: "Sr. System Executive",
+        role: "Sr. Salesforce Developer",
+        description:
+          "While working as a senior resource on a service-based Salesforce development project I got an opportunity to work closely with the direct client by participating in daily status meetings and requirement gathering discussions. I got to design a public API for one of the requirements which was created and maintained by me. Overall, I worked on technologies like Salesforce.com, HTML, CSS, JS, LWC, Lightning Aura Components, Apex, Payment Gateway Integration (REST APIs), etc.",
+        fromYear: 2020,
+        fromMonth: 8,
+        toYear: 2021,
+        toMonth: 8,
+      },
+      {
+        id: 1,
+        employer: "Eternus Solutions Private Limited",
+        website: "https://www.eternussolutions.com",
+        designation: "System Executive",
+        role: "Salesforce Developer",
+        description:
+          "I worked on a couple of Salesforce AppExchange product development projects and got awarded for my contribution as a HotStepper. Got to learn packaging basics in salesforce since I worked on managed and unmanaged packages. I also worked on a service based project majorly focusing on REST API integrations and user interface using Visualforce and Lightning Aura components.",
+        fromYear: 2018,
+        fromMonth: 9,
+        toYear: 2020,
+        toMonth: 7,
+      },
+      {
+        id: 2,
+        employer: "Eternus Solutions Private Limited",
+        website: "https://www.eternussolutions.com",
+        designation: "Trainee",
+        role: "Trainee",
+        description:
+          "I got trained on Salesforce platform as a developer along with some basics of Admin operations.",
+        fromYear: 2018,
+        fromMonth: 6,
+        toYear: 2018,
+        toMonth: 9,
       },
     ],
   },

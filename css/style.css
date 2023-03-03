@@ -76,10 +76,18 @@ li.nav-item:hover {
   ) !important;
 }
 
-.tech-description {
-  font-size: 0.9rem;
-  word-spacing: 0.2rem;
+.description-generic {
+  font-size: 0.8rem;
+  word-spacing: 0.1rem;
   letter-spacing: 0.5px;
+}
+
+.font-size-x-small {
+  font-size: x-small;
+}
+
+.font-size-small {
+  font-size: small;
 }
 
 .tech-item {
@@ -148,6 +156,19 @@ li.nav-item:hover {
 
 .overflow-y-hidden {
   overflow-y: hidden;
+}
+
+.exp-separator {
+  height: 2rem;
+  /* background-color: #0077b5; */
+}
+
+.separator-border-left {
+  border-left: 1px solid white;
+}
+
+.separator-border-right {
+  border-left: 1px solid white;
 }
 
 @media (max-width: 768px) {

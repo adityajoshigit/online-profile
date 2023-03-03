@@ -157,7 +157,7 @@
                       {{item.label}}
                     </span>
                   </div>
-                  <div class="tech-description mt-3">
+                  <div class="description-generic mt-3">
                     {{skill.description}}
                   </div>
                 </div>
@@ -203,11 +203,9 @@
                   </span>
                 </div>
                 <div class="text-center project-description text-secondary pt-2">
-                  <h6>
-                    <small>
+                  <p class="description-generic">
                       {{project.description}}
-                    </small>
-                  </h6> 
+                  </p> 
                 </div>
               </div>
               <div class="card-footer">
@@ -229,6 +227,80 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <section id="work-exp" class="work-exp-section pb-2">
+      <div class="container bg-primary">
+        <h2 class="text-white p-3 text-center">
+          <span class=" section-header-span border-color-white">
+            Work Experience
+          </span>
+        </h2>
+        <div class="d-flex flex-column align-items-stretch justify-content-start ">
+          <div class="accordion " id="workExpData">
+            <div 
+              v-for="(exp, index) in workExpInfo.expList" 
+              class="accordion-item border-0 bg-primary"
+            >
+              <div v-if="index != 0" class="exp-separator w-100 row">
+                <div class="col-6 separator-border-right p-0"></div>
+                <div class="col-6 separator-border-left p-0"></div>
+              </div>
+              <h2 
+                class="accordion-header" 
+                :id="`expNumber_${exp.id}`"
+              >
+                <button 
+                  class="accordion-button border border-1 rounded-1 border-color-white bg-white" 
+                  type="button" 
+                  data-bs-toggle="collapse" 
+                  :data-bs-target="`#expItem${exp.id}`" 
+                  aria-expanded="false" 
+                  :aria-controls="`expItem${exp.id}`"
+                >
+                  <div class="d-flex flex-md-row flex-column  justify-content-between align-items-center w-100 employment-header">
+                    <div class="flex-grow-1 text-center text-md-start headers">
+                      <h4 class="designation-header w-100">
+                        {{exp.designation}}
+                      </h4>  
+                      <p class="employer-header w-100 m-0 text-secondary-emphasis">
+                        {{exp.employer}}
+                        <sup>
+                          <a :href="exp.website || '#'" target="_blank" class="employer-website m-md-1">
+                            <i class="bi bi-window-stack font-size-x-small position-relative top-0"></i>
+                          </a>
+                        </sup>
+                      </p>
+                    </div>
+                    <div class="text-md-end text-center timeline-details">
+                      <p class="text-secondary-emphasis m-0 pt-2 pe-md-3 pe-0 font-size-small">
+                        <em>
+                          {{
+                            monthInWords[exp.fromMonth] + ' ' + exp.fromYear +
+                            ' to ' +
+                            monthInWords[exp.toMonth] + ' ' + exp.toYear
+                          }}
+                        </em>
+                      </p>
+                    </div>
+                  </div>
+                </button>
+              </h2>
+              <div 
+                :id="`expItem${exp.id}`" 
+                class="accordion-collapse collapse" 
+                :aria-labelledby="`expNumber_${exp.id}`" 
+                data-bs-parent="#workExpData"
+              >
+                <div class="accordion-body bg-white rounded-1">
+                  <p v-text="exp.description" 
+                    class="description-text text-secondary description-generic"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ghost" style="height: 4rem;"></div>
       </div>
     </section>
     <section id="contact-me" class="contact-em-section">
