@@ -1,6 +1,3 @@
-// import { sendEmail } from "../js/emailUtil";
-// import { createApp } from "https://unpkg.com/petite-vue?module";
-
 const { createApp } = Vue;
 
 createApp({
@@ -311,25 +308,6 @@ createApp({
   methods: {
     sendEmail: function () {
       this.isLoading = true;
-      // emailjs
-      //   .send(
-      //     "service_iu6lm5r",
-      //     "template_91lq7uj",
-      //     {
-      //       from_name: this.leadNameValue,
-      //       reply_to: this.leadEmailId,
-      //       message: this.leadMessageToMe,
-      //     },
-      //     "eSiKRxI75N8U__SNG"
-      //   )
-      //   .then()
-      //   .catch()
-      //   .finally(() => {
-      //     this.isLoading = false;
-      //     this.leadEmailId = "";
-      //     this.leadNameValue = "";
-      //     this.leadMessageToMe = "";
-      //   });
       emailUtil
         .sendEmail({
           from_name: this.leadNameValue,
