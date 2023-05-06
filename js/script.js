@@ -263,7 +263,46 @@ createApp({
         totalYears: 3,
         expList: [
           {
-            id: 0,
+            id: 5,
+            employer: "WorkJam",
+            website: "https://www.workjam.com/",
+            designation: "Core Java Developer Intern",
+            role: "Intern",
+            description:
+              "Working as a Software Development Intern",
+            fromYear: 2023,
+            fromMonth: 5,
+            toYear: 2023,
+            toMonth: 5,
+          },
+          {
+            id: 4,
+            employer: "Endhome Closing and Consulting Services",
+            website: "https://endhome.ca/",
+            designation: "Software Developer Intern",
+            role: "Intern",
+            description:
+              "Helped the internal team to automate certain business processes on Salesforce platform.",
+            fromYear: 2022,
+            fromMonth: 10,
+            toYear: 2022,
+            toMonth: 12,
+          },
+          {
+            id: 3,
+            employer: "McDonald's Restaurants Canada",
+            website: "https://www.eternussolutions.com",
+            designation: "Crew Member",
+            role: "Crew Member",
+            description:
+              "Working here as a part time crew while studying.",
+            fromYear: 2022,
+            fromMonth: 1,
+            toYear: 2023,
+            toMonth: 5,
+          },
+          {
+            id: 2,
             employer: "Eternus Solutions Private Limited",
             website: "https://www.eternussolutions.com",
             designation: "Sr. System Executive",
@@ -289,7 +328,7 @@ createApp({
             toMonth: 7,
           },
           {
-            id: 2,
+            id: 0,
             employer: "Eternus Solutions Private Limited",
             website: "https://www.eternussolutions.com",
             designation: "Trainee",
