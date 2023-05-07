@@ -291,7 +291,7 @@ createApp({
           {
             id: 3,
             employer: "McDonald's Restaurants Canada",
-            website: "https://www.eternussolutions.com",
+            website: "https://www.mcdonalds.com/ca/en-ca.html",
             designation: "Crew Member",
             role: "Crew Member",
             description:
