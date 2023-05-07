@@ -269,7 +269,7 @@ createApp({
             designation: "Core Java Developer Intern",
             role: "Intern",
             description:
-              "Working as a Software Development Intern",
+              "Working as a Software Development Intern on technologies like React.js, Node.js, TypeScript etc.",
             fromYear: 2023,
             fromMonth: 5,
             toYear: 2023,
